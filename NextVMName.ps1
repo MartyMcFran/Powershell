@@ -1,4 +1,4 @@
-$datacenter = Read-host "data center name: "
+$datacenter = Read-host "data center name: " tacho
 $department = Read-Host "Enter department 3 letter code: "
 $virtorphy = Read-Host "v for virtual or p for physical? "
 $winorlinux = Read-Host "w for windows or L for linux? "
