@@ -6,11 +6,11 @@ $evinronment = Read-Host "P for prod, T for test, D for dev? "
 
 $vmnameprefix = $datacenter+$department+$virtorphy+$winorlinux+$evinronment
 
-$serverOU = "OU=_Servers,DC=montefiore,DC=org"
+#$serverOU = "OU=_Servers,DC=montefiore,DC=org"
 
 $servers = Get-ADComputer -Filter {ObjectClass -eq "computer"} | Where-Object Name -Match "$vmnameprefix*"
 
-$servers = $servers | select Name
+$servers = $servers | Select-Object Name
 
 $servers = $servers | Sort-Object Name
 
