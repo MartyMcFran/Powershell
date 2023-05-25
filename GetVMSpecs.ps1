@@ -1,7 +1,9 @@
-$ComputerName = "YKGYNS1"
-$Username = "a_kferdous@montefiore.org"
-$Password = ConvertTo-SecureString "gx7RGB%^ML" -AsPlainText -Force
-$Credential = New-Object System.Management.Automation.PSCredential ($Username, $Password)
+
+$ComputerName = Read-Host "What's the computer Name? "
+#$Username = Read-Host "What's your username? "
+#$Pw = Read-Host "What's your password? "
+#$Password = ConvertTo-SecureString "$Pw" -AsPlainText -Force
+#$Credential = New-Object System.Management.Automation.PSCredential ($Username, $Password)
 
 
 
