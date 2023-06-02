@@ -1,3 +1,5 @@
+#Users must be logged in to the network with the 'a' account before running this script
+
 $datacenter = Read-host "data center name: "
 $department = Read-Host "Enter department 3 letter code: "
 $virtorphy = Read-Host "v for virtual or p for physical? "
